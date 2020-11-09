@@ -12,6 +12,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EncounterComponent } from './encounter/encounter.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BuilderComponent } from './components/builder/builder.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { EncounterComponent } from './encounter/encounter.component';
     HeaderComponent,
     SidenavComponent,
     EncounterComponent,
+    BuilderComponent,
   ],
   entryComponents: [],
   imports: [
