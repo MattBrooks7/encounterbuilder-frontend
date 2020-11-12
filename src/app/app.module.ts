@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EncounterComponent } from './components/encounter/encounter.component';
 import { BuilderComponent } from './components/builder/builder.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MonstersComponent } from './components/monsters/monsters.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     SidenavComponent,
     EncounterComponent,
     BuilderComponent,
+    MonstersComponent,
   ],
   entryComponents: [],
   imports: [
