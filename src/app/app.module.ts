@@ -11,9 +11,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
-import { EncounterComponent } from './encounter/encounter.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { EncounterComponent } from './components/encounter/encounter.component';
 import { BuilderComponent } from './components/builder/builder.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -34,6 +34,7 @@ import { BuilderComponent } from './components/builder/builder.component';
     MatDividerModule,
     MatSidenavModule,
     HttpClientModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
