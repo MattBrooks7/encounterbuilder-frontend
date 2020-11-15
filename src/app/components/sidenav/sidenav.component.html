@@ -2,13 +2,13 @@
     <mat-sidenav-container class="example-container" fullsreen>
       <mat-sidenav mode="side" opened>
         <div class="startbutton">
-        <button mat-raised-button [routerLink]= "['/encounter']">Start Encounter</button>   
+        <button mat-raised-button [routerLink]= "['/encounter']">Encounter</button>   
       </div>
     
       <div class="monsterbutton">
         <button click="showmonsters" [routerLink]= "['/monsters']">Monsters</button>
       </div>
     </mat-sidenav>
-      <mat-sidenav-content><app-home></app-home></mat-sidenav-content>
+      <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
     </mat-sidenav-container>
   </div>

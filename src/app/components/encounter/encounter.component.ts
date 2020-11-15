@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {MatTableModule} from '@angular/material/table';
+
 
 @Component({
   selector: 'app-encounter',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./encounter.component.scss']
 })
 export class EncounterComponent implements OnInit {
+  http: HttpClient;
+  encounterApi: any;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  showAllEncounters() {
+    return this.http.get<any>(`${this.encounterApi}/index`);
   }
 
 }

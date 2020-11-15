@@ -15,6 +15,7 @@ import { EncounterComponent } from './components/encounter/encounter.component';
 import { BuilderComponent } from './components/builder/builder.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MonstersComponent } from './components/monsters/monsters.component';
+import { MatTableModule } from '@angular/material/table'; 
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MonstersComponent } from './components/monsters/monsters.component';
     MatSidenavModule,
     HttpClientModule,
     MatFormFieldModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
