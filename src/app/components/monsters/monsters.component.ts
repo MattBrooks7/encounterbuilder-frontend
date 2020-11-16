@@ -1,4 +1,6 @@
+import { MONSTERS } from './../../mock-files/mock-monsters';
 import { Component, OnInit } from '@angular/core';
+import { Monsters } from 'src/app/models/monsters';
 
 @Component({
   selector: 'app-monsters',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./monsters.component.scss']
 })
 export class MonstersComponent implements OnInit {
+  monsters: Monsters[] = MONSTERS;
+  name: string;
+  images = [];
+  constructor() {}
 
-  constructor() { }
 
   ngOnInit(): void {
   }
-
 }

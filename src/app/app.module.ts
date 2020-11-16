@@ -16,6 +16,7 @@ import { BuilderComponent } from './components/builder/builder.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MonstersComponent } from './components/monsters/monsters.component';
 import { MatTableModule } from '@angular/material/table'; 
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MatTableModule } from '@angular/material/table';
     HttpClientModule,
     MatFormFieldModule,
     MatTableModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
