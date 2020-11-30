@@ -1,4 +1,3 @@
-import { MONSTERS } from './../../mock-files/mock-monsters';
 import { Component, OnInit } from '@angular/core';
 import { Monsters } from 'src/app/models/monsters';
 
@@ -8,7 +7,7 @@ import { Monsters } from 'src/app/models/monsters';
   styleUrls: ['./monsters.component.scss']
 })
 export class MonstersComponent implements OnInit {
-  monsters: Monsters[] = MONSTERS;
+
   name: string;
   images = [];
   constructor() {}

@@ -1,3 +1,4 @@
+import { AddMonsterComponent } from './components/add-monster/add-monster.component';
 import { MonstersComponent } from './components/monsters/monsters.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'monsters',
     component: MonstersComponent
+  },
+  {
+    path: 'addmonsters',
+    component: AddMonsterComponent
   }
 ];
 

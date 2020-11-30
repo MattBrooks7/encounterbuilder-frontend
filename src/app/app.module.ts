@@ -1,3 +1,4 @@
+import { MonstersService } from './shared/services/monsters.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +18,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MonstersComponent } from './components/monsters/monsters.component';
 import { MatTableModule } from '@angular/material/table'; 
 import {MatExpansionModule} from '@angular/material/expansion';
+import { AddMonsterComponent } from './components/add-monster/add-monster.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     EncounterComponent,
     BuilderComponent,
     MonstersComponent,
+    AddMonsterComponent,
   ],
   entryComponents: [],
   imports: [
@@ -42,7 +45,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTableModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [
+    MonstersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
