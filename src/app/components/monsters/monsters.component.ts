@@ -1,3 +1,4 @@
+import { MonstersService } from './../../shared/services/monsters.service';
 import { Component, OnInit } from '@angular/core';
 import { Monsters } from 'src/app/models/monsters';
 
@@ -7,12 +8,21 @@ import { Monsters } from 'src/app/models/monsters';
   styleUrls: ['./monsters.component.scss']
 })
 export class MonstersComponent implements OnInit {
-
+  monsters: any[] = []
   name: string;
   images = [];
-  constructor() {}
+  constructor(
+    private monsterService: MonstersService
+  ) {}
 
 
   ngOnInit(): void {
+    this.retrieveAllMonsters()
+  }
+
+  retrieveAllMonsters() {
+    this.monsterService.getAllMonsters().subscribe(data => {
+      debugger
+    })
   }
 }
