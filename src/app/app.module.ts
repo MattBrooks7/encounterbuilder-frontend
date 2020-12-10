@@ -19,6 +19,7 @@ import { MonstersComponent } from './components/monsters/monsters.component';
 import { MatTableModule } from '@angular/material/table'; 
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AddMonsterComponent } from './components/add-monster/add-monster.component';
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AddMonsterComponent } from './components/add-monster/add-monster.compon
     MatFormFieldModule,
     MatTableModule,
     MatExpansionModule,
+    MatInputModule
   ],
   providers: [
     MonstersService
